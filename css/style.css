@@ -1,55 +1,146 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 .container {
-    background: #00CED1;
     color: #ffffff;
-    padding:0 15px 80px 15px;
-
 } 
+
+/* Header */
+
 header {
+    background: #00CED1;
     width: 100%;
     /* height: 300px; */
     display: grid;
     grid-template-areas: 
-    'brain-icon',
+    'brain-icon'
     'page-h1';
     text-align: center;
+    padding: 60px 0 60px 0;
 }
 
 .fa-brain {
-    font-size: 5em;
-    grid-area: 'brain-icon';
-    vertical-align: center;
-    margin: 60px 0 10px 0;
+    font-size: 12rem;
+    grid-area: brain-icon;
+    /* vertical-align: center; */
+    margin: 0px 0 10px 0;
 }
 
 h1.page-h1 {
-    grid-area: 'page-h1';
+    grid-area: page-h1;
+    font-size: 1rem;
+    display: block;
+    font-weight: 700;
+}
+
+
+.h1-span {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.4em;
-    letter-spacing: 1px;
+    font-size: 3rem;
+    letter-spacing: 6px;
+}
+
+/* ///////// */
+
+/* semispheres section */
+
+article.semispheres i {
+    font-size: 5em;
 }
 
 article.semispheres {
     display: grid;
     grid-gap: 10px;
-    grid-template-areas: 'left-semisphere right-semisphere';
-    text-align: center;
-    margin-top: 60px;
+    grid-template-areas: 
+    'left-semisphere'
+    'right-semisphere';
+
+    text-align: left;
+    padding: 60px 25px;
     text-transform: uppercase;
-    font-size: 1.4em;
+    background: #ffffff;
+    color: #00CED1;
     
 }
 
-.left-semisphere {
-    grid-area: 'left-semisphere';
+/* article.semispheres .semispheres-icon {
+   text-align: center;
+} */
 
+article.semispheres section {
+    margin: 0 0 60px 0;
+ }
 
+article.semispheres h1 {
+   margin: 0 0 30px 0;
 }
+
+article.semispheres span {
+   display: block;
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+article.semispheres p {
+    text-align: left;
+    font-size: 1rem;
+    text-transform: none;
+    margin: 0 0 30px 0;
+ }
+
+/* /////////////////// */
+
+
+/* left-semispheres section */
+
+.left-semisphere {
+    grid-area: left-semisphere;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'left-semi-h1 left-semi-h1 left-semi-h1'
+    'left-semi-p left-semi-p left-semi-p'
+    'left-semi-chess left-semi-hand left-semi-eye';
+}
+
+.left-semisphere .semispheres-icon:nth-of-type(1){
+    text-align: left;
+} 
+
+.left-semisphere .semispheres-icon:nth-of-type(2){
+    text-align: center;
+} 
+
+.left-semisphere .semispheres-icon:nth-of-type(3){
+    text-align: right;
+} 
+
+.left-semisphere h1 {
+    grid-area: left-semi-h1; 
+}
+
+.left-semisphere p {
+    grid-area: left-semi-p; 
+}
+
+.left-semisphere .chess {
+    grid-area: left-semi-chess; 
+}
+
+.left-semisphere .hand {
+    grid-area: left-semi-hand; 
+}
+
+.left-semisphere .eye {
+    grid-area: left-semi-eye; 
+}
+
+/* ////////////////////// */
 
 .right-semisphere {
-    grid-area: 'right-semisphere';
-
+    grid-area: right-semisphere;
 }
+
