@@ -4,18 +4,21 @@
 const leftCarousel = {
     number : Math.floor(Math.random()*3),
     leftCarouselContainer : $('.left-semisphere'),
-    carouselBoards : [$('.chess'), $('.chess'), $('.chess')]
+    carouselBoards : [$('.chess'), $('.hand'), $('.eye')],
+
 }
+
+console.log(leftCarousel.carouselBoards[leftCarousel.number])    
 
 
 function switchBoard() {
     let lc = leftCarousel;
     let number = lc.number++;
-    if (lc.time > 3) lc.time = 1;
+    if (lc.number > 2) lc.number = 0;
 
     let board = lc.carouselBoards[number];
 
-    lc.leftCarouselContainer.append(board);
+    lc.leftCarouselContainer.html(board);
     board.css('display', 'block');
 
     // setTimeout(function(){
