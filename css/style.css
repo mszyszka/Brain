@@ -210,13 +210,16 @@ article.weight {
     grid-gap: 10px;
     grid-template-areas:
     'h1'
-    'counter';
+    'p0'
+    'counter'
+    'p1'
+    'smartphone';
     text-align: left;
     padding: 60px 25px;
     text-transform: uppercase;
     color: #ffffff;
     background: #00CED1;
-    
+    font-weight: 700;
 }
 
 .weight h1 {
@@ -226,14 +229,35 @@ article.weight {
     font-weight: 700;
 }
 
+.weight p {
+    grid-area: p0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.weight p:nth-of-type(2) {
+    grid-area: p1;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
 .weight .counterContainer {
     grid-area: counter;
     font-size: 6rem;
     font-weight: 700;
     text-align: center;
+    text-transform: none;
+    margin-bottom: 60px;
+
 }
 
 .weight .counterContainer span {
-    text-transform: none;
     font-weight: 700;
+}
+
+.weight i {
+    grid-area: smartphone;
+    font-size: 10rem;
+    text-align: center;
 }
