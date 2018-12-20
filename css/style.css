@@ -203,3 +203,37 @@ article.semispheres p {
     grid-area: right-semi-eye; 
 }
 
+/* ////////////////////////////// */
+
+article.weight {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'h1'
+    'counter';
+    text-align: left;
+    padding: 60px 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #00CED1;
+    
+}
+
+.weight h1 {
+    grid-area: h1;
+    margin: 0 0 60px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.weight .counterContainer {
+    grid-area: counter;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.weight .counterContainer span {
+    text-transform: none;
+    font-weight: 700;
+}

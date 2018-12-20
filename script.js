@@ -41,7 +41,7 @@ switchBoardLeft();
 const rightCarousel = {
     number : Math.floor(Math.random()*3),
     rightCarouselContainer : $('.right-semisphere'),
-    carouselBoards : [$('.chess'), $('.hand'), $('.eye')],
+    carouselBoards : [$('.lightbulb'), $('.drum'), $('.laught')],
 
 }
 
@@ -73,3 +73,31 @@ function switchBoardRight() {
 switchBoardRight();
 
 ////////////////////////
+
+/////////////////counter
+
+const counter = {
+    counterContainer : $('.counterContainer'),
+    actualNumber : 0,
+    // myTimer : setTimeout('countForMe()', 10)
+    
+}
+
+function countForMe(){
+
+    let c = counter;
+    
+    if(c.actualNumber == 1400) {
+        c.counterContainer.html('1400g');
+    } else {
+        c.actualNumber++;
+        c.counterContainer.html(c.actualNumber + '<span>g</span>');
+
+        setTimeout('countForMe()', 5);
+    } 
+
+
+
+}
+
+countForMe();
