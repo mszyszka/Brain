@@ -100,15 +100,47 @@ function countForMe(){
         displaySmartphone();
         // $('.smartphone').css('display', 'block');
     } else {
-        c.actualNumber++;
+        c.actualNumber += 10;
         c.counterContainer.html(c.actualNumber + '<span>g</span>');
 
-        setTimeout('countForMe()', 3);
+        setTimeout('countForMe()', 0,5);
     } 
 
 
 
 }
 
-countForMe();
+// countForMe();
+
+////function to detect is element in the viewport.
+
+// .fn - to bound content with jQuery prototype object and get access to its methods
+// in jQuety .fn is just an alias to the prototype property
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+  
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+  
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+  
+  $(window).on('resize scroll', function() {
+
+    let fireCountForMe = $('.fireCountForMe');
+    if(fireCountForMe.isInViewport()){
+        countForMe();
+    }
+
+
+    // $('.color').each(function() {
+    //     var activeColor = $(this).attr('id');
+    //   if ($(this).isInViewport()) {
+    //     $('#fixed-' + activeColor).addClass(activeColor + '-active');
+    //   } else {
+    //     $('#fixed-' + activeColor).removeClass(activeColor + '-active');
+    //   }
+    // });
+  });
 

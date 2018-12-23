@@ -237,7 +237,7 @@ article.weight {
     text-align: center;
 }
 
-.weight .smartphon p {
+.weight .smartphone p {
     font-size: 2rem;
     text-align: center;
     margin: 0 0 30px 0;
@@ -282,3 +282,8 @@ article.weight {
 .computingPower p {
     margin: 0 0 30px 0;
 }
+
+.computingPower p::first-letter {
+    font-size: 2rem;
+}
+
