@@ -205,14 +205,16 @@ article.semispheres p {
 
 /* ////////////////////////////// */
 
+/* weight article */
+
+
 article.weight {
     display: grid;
     grid-gap: 10px;
     grid-template-areas:
     'h1'
-    'p0'
+    'p'
     'counter'
-    'p1'
     'smartphone';
     text-align: left;
     padding: 60px 25px;
@@ -230,13 +232,12 @@ article.weight {
 }
 
 .weight p {
-    grid-area: p0;
+    grid-area: p;
     font-size: 2rem;
     text-align: center;
 }
 
-.weight p:nth-of-type(2) {
-    grid-area: p1;
+.weight .smartphon p {
     font-size: 2rem;
     text-align: center;
     margin: 0 0 30px 0;
@@ -256,8 +257,28 @@ article.weight {
     font-weight: 700;
 }
 
-.weight i {
-    grid-area: smartphone;
-    font-size: 10rem;
+.smartphone {
     text-align: center;
+    grid-area: smartphone;
+    display: none;
+}
+
+.weight .smartphone i {
+    font-size: 10rem;
+}
+
+/* ////////////////////////////// */
+
+
+/* computing power article */
+
+.computingPower {
+    color: #00CED1;
+    padding: 60px 25px;
+    font-size: 1rem;
+
+}
+
+.computingPower p {
+    margin: 0 0 30px 0;
 }

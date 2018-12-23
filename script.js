@@ -18,7 +18,6 @@ function switchBoardLeft() {
     lc.leftCarouselContainer.append(board);
 
     board.fadeIn(500);
-    // board.css('display', 'block');
 
     setTimeout(function(){
         board.fadeOut(5000);
@@ -74,7 +73,16 @@ switchBoardRight();
 
 ////////////////////////
 
-/////////////////counter
+///////displaySmartphone()
+
+function displaySmartphone() {
+    let smartphoneDiv = $('.smartphone');
+    smartphoneDiv.fadeIn(800);
+}
+
+////////////////////////
+
+//////////////////counter
 
 const counter = {
     counterContainer : $('.counterContainer'),
@@ -89,11 +97,13 @@ function countForMe(){
     
     if(c.actualNumber == 1400) {
         c.counterContainer.html('1400g');
+        displaySmartphone();
+        // $('.smartphone').css('display', 'block');
     } else {
         c.actualNumber++;
         c.counterContainer.html(c.actualNumber + '<span>g</span>');
 
-        setTimeout('countForMe()', 5);
+        setTimeout('countForMe()', 3);
     } 
 
 
@@ -101,3 +111,4 @@ function countForMe(){
 }
 
 countForMe();
+
