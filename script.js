@@ -110,8 +110,6 @@ function countForMe(){
 
 }
 
-// countForMe();
-
 ////function to detect is element in the viewport.
 
 // .fn - to bound content with jQuery prototype object and get access to its methods
@@ -133,14 +131,7 @@ $.fn.isInViewport = function() {
         countForMe();
     }
 
-
-    // $('.color').each(function() {
-    //     var activeColor = $(this).attr('id');
-    //   if ($(this).isInViewport()) {
-    //     $('#fixed-' + activeColor).addClass(activeColor + '-active');
-    //   } else {
-    //     $('#fixed-' + activeColor).removeClass(activeColor + '-active');
-    //   }
-    // });
   });
+
+  //////////////
 

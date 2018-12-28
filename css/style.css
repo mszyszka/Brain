@@ -6,6 +6,17 @@ body {
     color: #ffffff;
 } 
 
+h1{
+    margin: 0 0 60px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1rem;
+    margin: 0 0 30px 0;
+}
+
 /* Header */
 
 header {
@@ -29,9 +40,7 @@ header {
 
 h1.page-h1 {
     grid-area: page-h1;
-    font-size: 1rem;
     display: block;
-    font-weight: 700;
 }
 
 
@@ -77,10 +86,6 @@ article.semispheres section {
     margin: 0 0 60px 0;
  }
 
-article.semispheres h1 {
-   margin: 0 0 60px 0;
-}
-
 article.semispheres span {
    /* display: block; */
    font-size: 1.2rem;
@@ -91,9 +96,7 @@ article.semispheres span {
 
 article.semispheres p {
     text-align: center;
-    font-size: 1rem;
     text-transform: none;
-    margin: 0 0 30px 0;
  }
 
 /* /////////////////// */
@@ -101,7 +104,7 @@ article.semispheres p {
 
 /* left-semispheres section */
 
-.left-semisphere {
+section.left-semisphere {
     grid-area: left-semisphere;
     display: grid;
     grid-template-columns: auto;
@@ -113,40 +116,40 @@ article.semispheres p {
     'left-semi-eye';
 }
 
-.left-semisphere .semispheres-icon:nth-of-type(1){
+section.left-semisphere .semispheres-icon:nth-of-type(1){
     display: none;
 } 
 
-.left-semisphere .semispheres-icon:nth-of-type(2){
+section.left-semisphere .semispheres-icon:nth-of-type(2){
     display: none;
 } 
 
-.left-semisphere .semispheres-icon:nth-of-type(3){
+section.left-semisphere .semispheres-icon:nth-of-type(3){
     display: none;
 } 
 
 
-.left-semisphere .semispheres-icon:nth-of-type(1) p{
+section.left-semisphere .semispheres-icon:nth-of-type(1) p{
     text-align: center;
 } 
 
-.left-semisphere h1 {
+section.left-semisphere h1 {
     grid-area: left-semi-h1; 
 }
 
-.left-semisphere p {
+section.left-semisphere p {
     grid-area: left-semi-p; 
 }
 
-.left-semisphere .chess {
+section.left-semisphere .chess {
     grid-area: left-semi-chess; 
 }
 
-.left-semisphere .hand {
+section.left-semisphere .hand {
     grid-area: left-semi-hand; 
 }
 
-.left-semisphere .eye {
+section.left-semisphere .eye {
     grid-area: left-semi-eye; 
 }
 
@@ -154,7 +157,7 @@ article.semispheres p {
 
 /* right-semispheres section */
 
-.right-semisphere {
+section.right-semisphere {
     grid-area: right-semisphere;
     display: grid;
     grid-template-columns: auto;
@@ -166,40 +169,40 @@ article.semispheres p {
     'right-semi-eye';
 }
 
-.right-semisphere .semispheres-icon:nth-of-type(1){
+section.right-semisphere .semispheres-icon:nth-of-type(1){
     display: none;
 } 
 
-.right-semisphere .semispheres-icon:nth-of-type(2){
+section.right-semisphere .semispheres-icon:nth-of-type(2){
     display: none;
 } 
 
-.right-semisphere .semispheres-icon:nth-of-type(3){
+section.right-semisphere .semispheres-icon:nth-of-type(3){
     display: none;
 } 
 
 
-.right-semisphere .semispheres-icon:nth-of-type(1) p{
+section.right-semisphere .semispheres-icon:nth-of-type(1) p{
     text-align: center;
 } 
 
-.right-semisphere h1 {
+section.right-semisphere h1 {
     grid-area: right-semi-h1; 
 }
 
-.right-semisphere p {
+section.right-semisphere p {
     grid-area: right-semi-p; 
 }
 
-.right-semisphere .chess {
+section.right-semisphere .chess {
     grid-area: right-semi-chess; 
 }
 
-.right-semisphere .hand {
+section.right-semisphere .hand {
     grid-area: right-semi-hand; 
 }
 
-.right-semisphere .eye {
+section.right-semisphere .eye {
     grid-area: right-semi-eye; 
 }
 
@@ -226,24 +229,21 @@ article.weight {
 
 .weight h1 {
     grid-area: h1;
-    margin: 0 0 60px 0;
-    font-size: 1.2rem;
-    font-weight: 700;
+    
 }
 
-.weight p {
+article.weight p {
     grid-area: p;
     font-size: 2rem;
     text-align: center;
 }
 
-.weight .smartphone p {
+article.weight .smartphone p {
     font-size: 2rem;
     text-align: center;
-    margin: 0 0 30px 0;
 }
 
-.weight .counterContainer {
+article.weight .counterContainer {
     grid-area: counter;
     font-size: 6rem;
     font-weight: 700;
@@ -253,7 +253,7 @@ article.weight {
 
 }
 
-.weight .counterContainer span {
+article.weight .counterContainer span {
     font-weight: 700;
 }
 
@@ -263,7 +263,7 @@ article.weight {
     display: none;
 }
 
-.weight .smartphone i {
+article.weight .smartphone i {
     font-size: 10rem;
 }
 
@@ -272,18 +272,52 @@ article.weight {
 
 /* computing power article */
 
-.computingPower {
+article.computingPower {
     color: #00CED1;
     padding: 60px 25px;
-    font-size: 1rem;
-
 }
 
-.computingPower p {
-    margin: 0 0 30px 0;
-}
-
-.computingPower p::first-letter {
+article.computingPower p::first-letter {
     font-size: 2rem;
 }
 
+/* ////////////////////////////// */
+
+/* psychosomatics article */
+
+article.psychosomatics {
+    background: #00CED1;
+    color: #ffffff;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'h1'
+    'p'
+    'ul';
+    text-align: left;
+    padding: 60px 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+article.psychosomatics h1 {
+    grid-area: h1;
+    font-weight: 700;
+
+}
+
+article.psychosomatics p{
+    grid-area: p;
+    text-transform: none;
+}
+
+article.psychosomatics ul{
+    grid-area: ul;
+    
+}
+
+article.psychosomatics ul li{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
