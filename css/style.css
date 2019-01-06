@@ -313,6 +313,7 @@ article.psychosomatics p{
 
 article.psychosomatics ul{
     grid-area: ul;
+    font-size: 2rem;
     
 }
 
@@ -320,4 +321,8 @@ article.psychosomatics ul li{
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 5px;
+}
+
+.fireSpellForMe {
+    padding: 60px 25px;
 }

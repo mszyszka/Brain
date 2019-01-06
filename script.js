@@ -135,3 +135,97 @@ $.fn.isInViewport = function() {
 
   //////////////
 
+
+  function spellItWithJQuery() {
+
+    let txt = 'stress anger fear tension aversion';
+    
+    for(let i = 0; i < txt.length; i++){
+
+        /*Im using iffe to create dealay after each iteration of for loop*/
+        (function(i) {
+
+            setTimeout(function(){
+
+                let ul = document.getElementsByClassName('psychoList')[0];
+                let letter = txt[i];
+                let letterTxtNode = document.createTextNode(letter);
+        
+                let span = document.createElement('span');
+                span.classList.add('.letterSpan');
+
+                let li = document.createElement('li');
+
+        
+                span.appendChild(letterTxtNode);
+                // li.appendChild(span);
+        
+                ul.appendChild(span);
+    
+            }, 60*i);
+    
+        })(i);
+    }
+}
+
+
+
+$(window).on('resize scroll', function() {
+
+    let fireSpellForMe = $('.fireSpellForMe');
+    if(fireSpellForMe.isInViewport()){
+        // spellItWithJQuery();
+    }
+
+  });
+
+
+// spellItWithJQuery();
+
+// function spellIt() {
+//     let psychoList = document.getElementsByClassName('psychoList')[0];
+
+//     let txt0 = 'stress';
+//     let txt1 = 'anger';
+//     let txt2 = 'fear';
+//     let txt3 = 'tension';
+//     let txt4 = 'aversion';
+
+//     let counter = 0;
+//     let actualTxt;
+
+//     if(counter == 0){
+
+//         actualTxt = txt0;
+
+//         for (let i = 0; i < actualTxt.length; i++){
+
+//             (function(i){
+
+//                 setTimeout(function(){
+                
+//                     let letter = actualTxt[i];
+
+//                     let letterTxtNode = document.createTextNode(letter);
+            
+//                     let span = document.createElement('span');
+//                     span.classList.add('.letterSpan');
+
+//                     let li = document.createElement('li');
+                
+//                     span.appendChild(letterTxtNode);
+//                     li.appendChild(span);
+                
+//                     psychoList.appendChild(span);
+
+//                 }, 100*i);
+            
+            
+//             })(i);
+//         }
+
+//     }
+
+// }
+
+// spellIt();
