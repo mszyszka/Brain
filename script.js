@@ -138,7 +138,7 @@ $.fn.isInViewport = function() {
 
   function spellIt() {
 
-    let txt = 'stress anger fear tension aversion';
+    let txt = 'stress, anger, fear, tension, aversion, trauma and many, many more';
     
     for(let i = 0; i < txt.length; i++){
 
@@ -178,6 +178,8 @@ $(window).on('resize scroll', function() {
 
     if(fireSpellForMe.isInViewport() ){
         spellIt();
+        //Until .fireSpellForMe div is in the viewport spellIt() will be start over and over.
+        //Im adding display: none to .fireSpellForMe div, to stop launching spellIt()
         fireSpellForMe.css('display', 'none');
     }
 

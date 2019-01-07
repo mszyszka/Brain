@@ -17,6 +17,11 @@ p{
     margin: 0 0 30px 0;
 }
 
+article {
+    padding: 60px 25px;
+    text-transform: uppercase;
+}
+
 /* Header */
 
 header {
@@ -67,8 +72,8 @@ article.semispheres {
     'right-semisphere';
 
     text-align: left;
-    padding: 60px 25px;
-    text-transform: uppercase;
+    
+    
     background: #ffffff;
     color: #00CED1;
     
@@ -86,11 +91,11 @@ article.semispheres section {
     margin: 0 0 60px 0;
  }
 
-article.semispheres span {
+/* article.semispheres span {
    /* display: block; */
    font-size: 1.2rem;
    font-weight: 700;
-}
+} */
 
 
 
@@ -220,7 +225,7 @@ article.weight {
     'counter'
     'smartphone';
     text-align: left;
-    padding: 60px 25px;
+    
     text-transform: uppercase;
     color: #ffffff;
     background: #00CED1;
@@ -236,7 +241,9 @@ article.weight p {
     grid-area: p;
     font-size: 2rem;
     text-align: center;
+
 }
+
 
 article.weight .smartphone p {
     font-size: 2rem;
@@ -250,6 +257,7 @@ article.weight .counterContainer {
     text-align: center;
     text-transform: none;
     margin-bottom: 60px;
+    line-height: 0.8;
 
 }
 
@@ -274,7 +282,7 @@ article.weight .smartphone i {
 
 article.computingPower {
     color: #00CED1;
-    padding: 60px 25px;
+    
 }
 
 article.computingPower p::first-letter {
@@ -295,7 +303,7 @@ article.psychosomatics {
     'p'
     'ul';
     text-align: left;
-    padding: 60px 25px;
+    
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -325,4 +333,13 @@ article.psychosomatics ul li{
 
 .fireSpellForMe {
     padding: 60px 25px;
+}
+
+/* ////////////////////////////// */
+
+/* mirror neurons */
+
+.mirrorNeurons {
+    background: #ffffff;
+    color: #00CED1;
 }
